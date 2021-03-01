@@ -6,8 +6,17 @@
 
 using namespace std;
 
+// 이렇게 하면 출력할 때 시간복잡도가 너무 커짐 (N배)
+// class Node {
+//   vector<Node*> children;
+//   string s; 
+// }
+
+
 class Node {
+  // int children[10] 
   public: map<string, Node> children; // 가장 고민 많았던 부분
+  // 
 };
 
 void insert(Node &v, vector<string> &arr, int i) {
